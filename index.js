@@ -20,8 +20,7 @@ async function checkWeather(cityName) {
   document.querySelector(".wind").innerHTML = data.wind.speed + ' km/h';
   let currentWeather = data.weather[0].main;
   currentWeather = currentWeather.toLowerCase();
-  console.log(currentWeather);
-  weatherIcon.src = `images/${currentWeather}.PNG`; 
+  weatherIcon.src = `images/${currentWeather}.png`; 
 
   document.querySelector(".error").style.display = "none";
   document.querySelector(".weather").style.display = "block";
