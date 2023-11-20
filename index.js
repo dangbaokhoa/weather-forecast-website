@@ -6,6 +6,12 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(cityName) {
+  if (cityName == "danuyen") {
+    document.querySelector(".error").style.display = "none";
+    document.querySelector(".weather").style.display = "block";
+    document.querySelector(".weather").innerHTML = `<span>Miss u</span><img src="download.png">`;
+    return;
+  }
   const response = await fetch(API_URL + cityName + `&appid=${API_KEY}`);
   if (response.status == 404) {
     document.querySelector(".error").style.display = "block";
