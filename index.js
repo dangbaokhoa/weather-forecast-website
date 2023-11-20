@@ -23,7 +23,7 @@ async function checkWeather(cityName) {
     weatherIcon.src = `images/clear.png`; 
   } 
   else if (currentWeather == 'Clouds') {
-    weatherIcon.src = `images/Clouds.png`; 
+    weatherIcon.src = `images/clouds.png`; 
   }
   else if (currentWeather == 'Drizzle') {
     weatherIcon.src = `images/drizzle.png`; 
